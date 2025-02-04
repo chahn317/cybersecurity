@@ -1,0 +1,281 @@
+/* Reset padding and margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+body {
+  padding: 64px 32px;
+  font: 18px/1.5 "Avenir", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  text-align: center;
+}
+
+
+header,
+footer {
+  max-width: 90ex;
+  margin: 0 auto;
+}
+
+header {
+  padding-bottom: 24px;
+  border-bottom: 2px solid #FFFFFF;
+}
+
+footer {
+  padding-top: 16px;
+  text-align: right;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  font-size: 36px;
+  font-family: 'Press Start 2P', serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-family: 'Press Start 2P', serif;
+}
+
+h3 {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: #FFFFFF;
+  font-size: 22px;
+  font-family: 'Nunito', sans-serif;
+}
+
+p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  text-align: left;
+}
+
+a {
+  color: #FFF;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: underline;
+}
+  
+a:visited {
+  color: #FFF; /* Visited link color */
+  font-family: 'Nunito', sans-serif;
+  text-decoration: underline;
+}
+
+.nunito-font {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.nunito-font-left {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  text-align: left;
+}
+
+
+.map {
+    text-align: left;
+}
+
+.search {
+  color: #000
+}
+
+.multi-select {
+  font-size: 15px;
+  text-align: left;
+  padding-right: 50px;
+}
+
+.select {
+  font-size: 18px;
+  color: black;
+  display: flex;
+  padding-left: 40px;
+}
+
+.chart {
+  display: flex;
+  padding-left: 30px;
+}
+
+.chart-pie {
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.chart-container {
+  justify-content: right;
+  padding-left: 20px;
+}
+
+.grandparent {
+    display: flex;
+    justify-content: center;
+}
+
+.left-align {
+  text-align: left;
+  padding-left: 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.quiz {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  min-height: 350px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+}
+
+.quiz-interface {
+  border: 3px solid #FFF;
+  width: 630px;
+  padding-top: 20px;
+}
+
+.buttons {
+  justify-content: center;
+}
+
+/* Style for the text section (left) */
+.text-section {
+  flex: 1;
+  text-align: left;
+  padding-right: 20px; /* Add some spacing between text and image */
+}
+
+/* Style for the image section (right) */
+.image-section img {
+  max-width: 100%; /* Make sure the image doesn't exceed its container */
+  height: auto; /* Maintain aspect ratio */
+  padding-right: 40px;
+}
+
+.headshots {
+  display: flex;
+  padding-right: 300px;
+  padding-left: 300px;
+  justify-content: space-between; /* Adjust as needed */
+}
+
+.headshot img {
+  max-width: 100%; /* Make sure the image doesn't exceed its container */
+  width: 150px;
+  height: 150px; 
+  border-radius: 50%;
+  clip-path: circle();
+}
+
+.question {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.options {
+  margin-bottom: 20px;
+}
+
+.option {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #191766;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color: rgb(57, 55, 222);
+}
+
+.result {
+  text-align: center;
+  font-weight: normal;
+}
+
+.hide{
+  display: none;
+}
+
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span{
+  background: white !important;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: #232191;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 14px;
+  transition: 0.3s;
+  border-radius: 10px 10px 0px 0px;
+  margin-right: 5px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #191766;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: rgb(57, 55, 222);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  align-items: top;
+  border-top: 1px solid #fff;
+}
+
+.tabs-container {
+  padding-left: 90px;
+  padding-right: 90px;
+}

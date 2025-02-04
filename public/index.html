@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Uncomment if you want your page to NOT be indexed by search engines: -->
+  <!-- <meta name="robots" content="none"> -->
+  <link rel="stylesheet" href="style.css" />
+  <title>Cybersecurity and You</title>
+
+  <!-- Uncomment if using d3: -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css" integrity="sha512-otONSJGv1l0LjJXcgyqi2MeKXtnthkiXAleeQjFJOKYcVD5u+mOuPb7xCnlsb74Ld+N0ONbP7KYRmW2/OWrvaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+</head>
+
+<!------------------------------------------------------------>
+<!-- You are free to modify this template however you want! -->
+<!------------------------------------------------------------>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js" integrity="sha512-LGiXf+jHGTHcIybSsOWO3I/in+OObCkcEsWIZ7IyhzfD6RzD5qDUw2CK+JveuI7zTSEcDG//bIOvOpAJW2BWsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <div id="fullpage">
+    <div class="section" id="title">
+      <img src="images/cybersecuritycomputer2.png" alt="Looks like the image won't load..." width="1000">
+    </div>
+    <div class="section" id="intro">
+      <div class="container">
+        <div class="text-section">
+          <h2 class="left-align">Why is cybersecurity important?</h2>
+          <p class="nunito-font">Good question!<br><br>
+
+          Personal cybersecurity is important for a variety of reasons. In today's society, more and more sensitive information is stored online. Therefore, people are increasingly vulnerable to forms of fraud due to information leaks from data stored on the internet. As cyberattacks grow increasingly complex, using good practices to keep yourself safe online is of utmost priority.<br><br>
+
+          As the visualization on the right shows, this problem becomes increasingly costly as time goes on. Cyberattacks become more prevalent and a larger issue every year.<br><br>
+
+          <b>Let's test how much you know about keeping yourself safe...</b>
+          </p>
+        </div>
+        <div class="image-section">
+          <img src="images/finalslide2.png" alt="Looks like the image won't load..." width="550">
+        </div>
+      </div>
+    </div>
+    <div class="section" id="quizSection">
+      <h2>Test your knowledge!</h2>
+      <div>
+        <div class="quiz">
+          <div id="quiz" class="quiz-interface"></div>
+          <div id="result" class="result"></div>
+        </div>
+        <div class="buttons">
+          <button id="submit" class="button">Submit</button>
+          <button id="retry" class="button hide">Retry</button>
+          <button id="showAnswer" class="button hide">Show Correct Answers</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section" id="knowledge">
+      <div class="container">
+        <div class="text-section">
+          <h2 class="left-align">Public Knowledge on Cybersecurity</h2>
+          <p class="nunito-font">If you found the quiz difficult, you're not alone.<br><br>
+          Research conducted by the Pew Research Center shows that Internet users have varying degrees
+          of knowledge on important cybersecurity topics. <br><br>
+          Select a topic to view what percent of users answered the question correct, incorrect, or not sure:
+          </p>
+          <br>
+          
+          <div class="select">
+            <div id="observablehq-x-f575c21e"></div>
+          </div>
+        </div>
+        <div class="chart-container">
+          <div class="chart-pie">
+            <div id="observablehq-chart2-f575c21e"></div>
+          </div>
+          
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+          <script type="module">
+          import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+          import define from "https://api.observablehq.com/d/f77d0418ee4da207@160.js?v=4";
+          new Runtime().module(define, name => {
+            if (name === "chart2") return new Inspector(document.querySelector("#observablehq-chart2-f575c21e"));
+            if (name === "x") return new Inspector(document.querySelector("#observablehq-x-f575c21e"));
+          });
+          </script>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="cyberattacks">
+      <h1>Types of Cyberattacks</h1>
+      Let's explore two of the most common cyberattacks: phishing and malware.
+    </div>
+    <div class="section" id="phishing">
+      <div class="container">
+        <div class="text-section">
+          <h2 class="left-align">Phishing</h2>
+          <p class="nunito-font">
+          Phishing is a type of cyberattack involving the use of deceptive messages, often by 
+          impersonating a company, to lead to websites that trick users into divulging personal information,
+          such as passwords and financial data. <br><br>
+          
+          The prevalence of phishing websites has increased in recent years. Use the graph to the     right to discover how the number of phishing websites has
+          changed overtime based on which industry sector is targeted. <br><br>
+
+          If you encounter a phishing scam, you should change any compromised passwords, scan your device for malware, and report it to the Federal Trade Commission.
+          </p>
+        </div>
+        <div class="chart-container">
+          <div class="chart">
+            <div id="observablehq-result-8b60ceca"></div>
+          </div>
+          <br>
+          <div class="multi-select">
+            <div id="observablehq-x-8b60ceca"></div>
+          </div>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+          <script type="module">
+          import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+          import define from "https://api.observablehq.com/d/802ab23ae14edba6@362.js?v=4";
+          new Runtime().module(define, name => {
+            if (name === "result") return new Inspector(document.querySelector("#observablehq-result-8b60ceca"));
+            if (name === "x") return new Inspector(document.querySelector("#observablehq-x-8b60ceca"));
+          });
+          </script>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="malware">
+      <div class="container">
+        <div class="text-section">
+          <h2 class="left-align">Malware</h2>
+          <p class="nunito-font">Let's define malware.<br><br>
+
+          According to Google, malware is "software that is specifically designed to disrupt, damage, or gain unauthorized access to a computer system."<br><br>
+
+          Malware can get into your computer through a variety of ways. For example, <b>trojan horse malware</b> can be installed onto your computer by pretending to be legitimate code or hardware.<br><br>
+
+         <b>Malware can spread like wildfire and be extremely costly.</b> Some of the most famous examples are shown to the right.
+          </p>
+        </div>
+        <div class="image-section">
+          <img src="images/captioned horses.png" alt="Looks like the image won't load..." width="750">
+        </div>
+      </div>
+    </div>
+    <div class="section" id="safety">
+      <h2>Best Practices for Cybersecurity</h2>
+      Although cyberattacks are everywhere online, there are several preventative measures you can take
+      to stay safe.
+      <div class="container">
+        <div class="text-section">
+          <p class="nunito-font">
+            <div class="tabs-container">
+              <!-- Tab links -->
+              <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Passwords')" id="defaultOpen">Passwords</button>
+                <button class="tablinks" onclick="openTab(event, 'MFA')">MFA</button>
+                <button class="tablinks" onclick="openTab(event, 'Software')">Software Updates</button>
+                <button class="tablinks" onclick="openTab(event, 'Messages')">Suspicious Messages</button>
+                <button class="tablinks" onclick="openTab(event, 'VPN')">VPNs</button>
+              </div>
+
+              <!-- Tab content -->
+              <div id="Passwords" class="tabcontent">
+                <p class="nunito-font-left"><br><b>Use secure passwords.</b> 
+
+                  <br><br>
+                  
+                  Your password should be unique - use different passwords for different accounts.
+                  It should also be long (at least 16 characters!) and contain letters, numbers, and symbols. 
+
+                  <br><br>
+                  
+                  Consider using a password manager for organization. Password managers allow you to use long,
+                  unique, and random passwords without the need to remember them. <br><br></p>
+              </div>
+
+              <div id="MFA" class="tabcontent">
+                <p class="nunito-font-left"><br><b>Use multi-factor authentication (MFA) for your accounts.</b> 
+
+                  <br><br>
+                  
+                  MFA is a system that requires users to authenticate through two or more verification factors to gain access to an account.
+                  For example, you may need to enter your password and approve the request on your phone.
+                  
+                  <br><br>
+                  
+                  MFA provides additional levels of security and allows you to keep your accounts safe even 
+                  if your login information is compromised.
+                  <br><br></p>
+              </div>
+
+              <div id="Software" class="tabcontent">
+                <p class="nunito-font-left"><br><b>Keep all of your software up-to-date.</b> 
+
+                  <br><br>
+                  
+                  Software companies continuously update their products to provide better security and protect against hackers.
+                  Updating your software is an easy way to ensure you have the best level of security possible.
+
+                  <br><br>
+                  
+                  You can set up automatic updates for your device and apps, and schedule them for times when you're
+                  not using your device, rather than updating them manually. 
+                  
+                  <br><br></p>
+              </div>
+
+              <div id="Messages" class="tabcontent">
+                <p class="nunito-font-left"><br><b>Avoid opening suspicious messages.</b> 
+
+                  <br><br>
+                  
+                  Don't open suspicious emails or suspicious messages on other platforms.
+                  If an email is from an unusual sender (such as a company you don't have an account with), offers deals that
+                  you didn't sign up for, or asks you to download something urgently, it is likely a phishing scam.
+
+                  <br><br>
+                  
+                  Don't click on any links or open any attachments from emails you suspect may be phishing scams. <br><br></p>
+              </div>
+
+              <div id="VPN" class="tabcontent">
+                <p class="nunito-font-left"><br><b>Use a virtual private network (VPN) to keep your connection private.</b> 
+
+                  <br><br>
+                  
+                  VPNs utilize a remote connection between your computer and a remote server to encrypt your data and hide
+                  your IP address. VPNs even hide your information from your internet service provider, who can normally monitor
+                  your online activity (even in incognito/private mode on your browser).
+
+                  <br><br>
+                  VPNs are especially important when using public WiFi networks, which do not encrypt your data.<br><br></p>
+              </div>
+            </div>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="passwords">
+      Check how common your password is based on your country! Drag and scroll on the globe to pan and zoom.
+      <p><br/></p>
+      <div class="grandparent">
+        <div class="map">
+          <div id="observablehq-viewof-map-0d3d43ce"></div>
+          <div>Select number of passwords:</div>
+          <div class="search">
+            <div id="observablehq-viewof-select_num-0d3d43ce"></div>
+          </div>
+          <div>Search your password:</div>
+          <div class="search">
+            <div id="observablehq-viewof-search-0d3d43ce"></div>
+          </div>
+        </div>
+        <div class="chart-container">
+          <div id="observablehq-viewof-chart-0d3d43ce"></div>
+        </div>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+        <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+        import define from "https://api.observablehq.com/d/45a60f12087f25bf@1908.js?v=4";
+        new Runtime().module(define, name => {
+          if (name === "viewof map") return new Inspector(document.querySelector("#observablehq-viewof-map-0d3d43ce"));
+          if (name === "viewof select_num") return new Inspector(document.querySelector("#observablehq-viewof-select_num-0d3d43ce"));
+          if (name === "viewof search") return new Inspector(document.querySelector("#observablehq-viewof-search-0d3d43ce"));
+          if (name === "viewof chart") return new Inspector(document.querySelector("#observablehq-viewof-chart-0d3d43ce"));
+          return ["select","passwords_by_country","plot_title"].includes(name);
+        });
+        </script>
+      </div>
+    </div>
+    <div class="section" id="credits">
+      <h1>Credits</h1>
+      <h2>Sources</h2>
+      <a href="https://www.pewresearch.org/internet/2017/03/22/what-the-public-knows-about-cybersecurity/" target="_blank">
+        What the Public Knows About Cybersecurity - Pew Research Center</a><br>
+      <a href="https://www.antiphishing.org/trendsreports/">
+        Phishing Activity Trends Reports - Anti-Phishing Working Group (AWPG)
+      </a><br>
+      <a href="https://www.kaggle.com/datasets/prasertk/top-200-passwords-by-country-2021/" target="_blank">
+        Top 200 Passwords By Country 2021 - Kaggle
+      </a><br>
+      <a href="https://s1.nordcdn.com/nord/misc/0.55.0/nordpass/200-most-common-passwords-en.pdf" target="_blank">
+        200 Most Common Passwords - Nordpass
+      </a><br>
+      <a href="https://www.getastra.com/blog/security-audit/data-breach-statistics/" target="_blank">
+        Data Breach Statistics - Astra
+      </a> <br>
+      <a href="https://www.cisa.gov/secure-our-world/use-strong-passwords" target="_blank">
+        Use Strong Passwords - Cybersecurity and Infrastructure Security Agency (CISA)
+      </a><br>
+      <a href="https://www.dsolutionsgroup.com/top-10-most-dangerous-malware-of-all-time/" target="_blank">
+        Most Dangerous Malware of All Time - DSolutionsGroup
+      </a><br><br>
+      <h2>Tools</h2>
+      Observable, Vega-Lite, D3.js, fullPage.js, Figma
+    </div>
+    <div class="section" id="about">
+      <h2>About this Project</h2>
+      <div class="container">
+        <div class="text-section">
+          <p class="nunito-font">Our names are <b>Sri Varshitha Pinnaka, Kyvalya Reddy,</b> and <b>Christina Hahn</b>.<br><br>
+            We created this project for <b>CSE 442: Data Visualization,</b> offered by the <b>Paul G. Allen School for Computer Science and Engineering</b> at the <b>University of Washington.</b> We 
+            would like to thank our instructor <b>Leilani Battle</b> and our TAs this quarter for guiding us this quarter!<br><br>
+
+          Finally, we hope this website allows you to learn more about how to keep yourself safe in
+          an increasingly digital world. <br>
+          </p>
+        </div>
+      </div>
+      <div class="headshots">
+        <a href="https://www.linkedin.com/in/sri-varshitha-pinnaka/" target="_blank">
+          <div class="headshot">
+            <img src="images/varsh.jpg" alt="Looks like the image won't load...">
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/kyvalya/" target="_blank">
+          <div class="headshot">
+            <img src="images/kyvalya.jpg" alt="Looks like the image won't load...">
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/christina-hahn-503b7329a/" target="_blank">
+          <div class="headshot">
+            <img src="images/christina.jpg" alt="Looks like the image won't load...">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+
+  <!-- <footer>
+    <p>
+      <a href="https://gitlab.cs.washington.edu/cse442/23au/final-project/cybersecurity">Repository</a>
+      <br>
+      <a href="https://courses.cs.washington.edu/courses/cse442/23au/">CSE 442 Data Visualization</a>
+      <br>
+      <a href="https://www.washington.edu">University of Washington</a>
+    </p>
+  </footer> -->
+
+  <script src="main.js"></script>
+</body>
+
+</html>
